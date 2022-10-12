@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 62.5%;
+  background-color: gray;
+  overflow: hidden;
+}
+
+nav {
+  font-size: 2em;
+}
+
+.menus {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu-list {
+  width: 10em;
+  display: flex;
+  gap: 1em;
+  list-style-type: none;
+}
+
+.menu-element {
+  width: 10em;
+  color: rgb(216, 216, 216);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  background-color: white;
+  padding: 0.6em;
+  transition: 0.3s;
+}
+
+.menu-element-left {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.menu-element-left ion-icon {
+  font-size: 1.5em;
+}
+
+.menu-element-left span {
+  font-size: 1em;
+}
+
+.menu-element:hover {
+  color: white;
+  background-color: rgb(175, 51, 61);
+}
+
+.nav-open {
+  width: 10em;
+  color: rgb(216, 216, 216);
+  position: absolute;
+}
+
+.arrow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-open-menu::before {
+  content: "";
+  position: absolute;
+  top: -55%;
+  left: 50%;
+  border: 15px solid;
+  border-color: transparent transparent white transparent;
+}
+
+.nav-open-menu {
+  top: 10rem;
+  border-radius: 3px;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+  transform: translateY(+30px);
+}
+
+.nav-open-menu-element {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  transition: 0.3s;
+  padding: 0.6em;
+}
+
+.nav-open-menu-element:hover {
+  border-left: 6px solid rgb(175, 51, 61);
+  color: rgb(163, 163, 163);
+}
+
+.nav-open-menu-element ion-icon {
+  font-size: 1.5em;
+}
+
+.nav-open-menu-element span {
+  font-size: 1em;
+}
+
+.hidden {
+  opacity: 1;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu-list {
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  opacity: 0;
+}
+
+.car-container {
+  margin-top: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.car-container img {
+  width: 80em;
+  height: 50em;
+  object-fit: cover;
+}
+
+.image-hidden {
+  display: none;
+}
+
+.car-nav {
+  margin-top: 0.5em;
+  font-size: 2em;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.red {
+  color: red;
+}
+
+.info {
+  font-size: 2em;
+  top: 10em;
+  position: absolute;
+}

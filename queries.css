@@ -1,0 +1,65 @@
+@media (max-width: 35em) {
+  body {
+    background-color: gray;
+  }
+
+  .menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: relative;
+  }
+
+  .menu-element {
+    margin-top: 0.3em;
+    width: auto;
+    border-radius: 100em;
+  }
+
+  .mobile-open {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+  }
+
+  .mobile-open-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .mobile-open-menu-element {
+    color: white;
+    list-style-type: none;
+  }
+
+  .mobile-open-menu-element span:hover {
+    color: gray;
+    transition: 0.5s;
+  }
+
+  .circle {
+    left: -50em;
+    top: -100em;
+    height: 150em;
+    width: 150em;
+    background-color: rgba(211, 99, 99, 0.877);
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.5s;
+  }
+
+  .hidden {
+    opacity: 1;
+  }
+
+  .car-container img {
+    width: 45em;
+    height: 50em;
+    object-fit: cover;
+  }
+}

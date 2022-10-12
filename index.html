@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/queries.css" />
+  </head>
+  <body>
+    <div class="info">
+      device width <= 560 to see mobile menu, image sauce: chainsaw man
+    </div>
+    <div class="circle"></div>
+
+    <nav>
+      <div class="menus">
+        <div class="menu">
+          <ul class="menu-list">
+            <li class="menu-element">
+              <div class="menu-element-left">
+                <ion-icon name="document-outline"></ion-icon>
+                <span>File Type</span>
+              </div>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </li>
+          </ul>
+          <div class="nav-open">
+            <ul class="nav-open-menu">
+              <li class="nav-open-menu-element">
+                <ion-icon name="document-outline"></ion-icon
+                ><span>Menu Item</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu">
+          <ul class="menu-list">
+            <li class="menu-element">
+              <div class="menu-element-left">
+                <ion-icon name="document-outline"></ion-icon>
+                <span>File Type</span>
+              </div>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </li>
+          </ul>
+          <div class="nav-open">
+            <ul class="nav-open-menu">
+              <li class="nav-open-menu-element">
+                <ion-icon name="document-outline"></ion-icon
+                ><span>Menu Item</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu">
+          <ul class="menu-list">
+            <li class="menu-element">
+              <div class="menu-element-left">
+                <ion-icon name="document-outline"></ion-icon>
+                <span>File Type</span>
+              </div>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </li>
+          </ul>
+          <div class="nav-open">
+            <ul class="nav-open-menu">
+              <li class="nav-open-menu-element">
+                <ion-icon name="document-outline"></ion-icon
+                ><span>Menu Item</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <ul class="mobile-menu-list">
+          <li class="menu-element">
+            <ion-icon name="chevron-down-outline"></ion-icon>
+          </li>
+        </ul>
+        <div class="mobile-open">
+          <ul class="mobile-open-menu">
+            <li class="mobile-open-menu-element">
+              <span>Menu Item</span>
+            </li>
+            <li class="mobile-open-menu-element">
+              <span>Menu Item</span>
+            </li>
+            <li class="mobile-open-menu-element">
+              <span>Menu Item</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="carousel">
+      <div class="car-container">
+        <img
+          class="image"
+          src="/src/chainsaw-man-manga-bat.webp"
+          alt="chain-saw-man"
+        />
+        <img
+          class="image image-hidden"
+          src="/src/L9PhObYH.png"
+          alt="chain-saw-man"
+        />
+        <img
+          class="image image-hidden"
+          src="/src/E2Le4q8XIAQLsH-.jpg_large"
+          alt="chain-saw-man"
+        />
+      </div>
+      <div class="car-nav">
+        <ion-icon class="arrow-left" name="chevron-back-outline"></ion-icon>
+
+        <div class="car-nav-dots">
+          <ion-icon
+            data-curr="0"
+            class="nav-dot dot-one red"
+            name="ellipse"
+          ></ion-icon>
+          <ion-icon
+            data-curr="1"
+            class="nav-dot dot-two"
+            name="ellipse"
+          ></ion-icon>
+          <ion-icon
+            data-curr="2"
+            class="nav-dot dot-three"
+            name="ellipse"
+          ></ion-icon>
+        </div>
+        <ion-icon class="arrow-right" name="chevron-forward-outline"></ion-icon>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
